@@ -1,0 +1,83 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Styling the title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Styling the instruction text */
+h2 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+h2 span {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Container for arranging buttons in a cross shape */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+/* Styling the buttons */
+span.button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+span.button:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
+
+/* Individual button colors */
+span#grey {
+    background-color: grey;
+    top: 0;
+    left: 55px;
+}
+
+span#white {
+    background-color: white;
+    top: 55px;
+    left: 0;
+    border-color: #ddd;
+}
+
+span#blue {
+    background-color: blue;
+    top: 55px;
+    left: 110px;
+}
+
+span#yellow {
+    background-color: yellow;
+    top: 110px;
+    left: 55px;
+}
